@@ -1,0 +1,9 @@
+1:"$Sreact.fragment"
+2:I[47257,["/trinidad-beni-guide/_next/static/chunks/2h770m9o00uz-.js","/trinidad-beni-guide/_next/static/chunks/11g3xuiafo48i.js","/trinidad-beni-guide/_next/static/chunks/1ccwwexciz5_y.js","/trinidad-beni-guide/_next/static/chunks/2ohwitmzla7p0.js","/trinidad-beni-guide/_next/static/chunks/2-rks3qwjjjsz.js","/trinidad-beni-guide/_next/static/chunks/39rz59-spsx2k.js"],"ClientPageRoot"]
+3:I[33738,["/trinidad-beni-guide/_next/static/chunks/2h770m9o00uz-.js","/trinidad-beni-guide/_next/static/chunks/11g3xuiafo48i.js","/trinidad-beni-guide/_next/static/chunks/1ccwwexciz5_y.js","/trinidad-beni-guide/_next/static/chunks/2ohwitmzla7p0.js","/trinidad-beni-guide/_next/static/chunks/2-rks3qwjjjsz.js","/trinidad-beni-guide/_next/static/chunks/39rz59-spsx2k.js","/trinidad-beni-guide/_next/static/chunks/17k9p6bj5stes.js"],"default"]
+6:I[97367,["/trinidad-beni-guide/_next/static/chunks/2h770m9o00uz-.js","/trinidad-beni-guide/_next/static/chunks/11g3xuiafo48i.js","/trinidad-beni-guide/_next/static/chunks/1ccwwexciz5_y.js","/trinidad-beni-guide/_next/static/chunks/2ohwitmzla7p0.js","/trinidad-beni-guide/_next/static/chunks/2-rks3qwjjjsz.js","/trinidad-beni-guide/_next/static/chunks/39rz59-spsx2k.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/trinidad-beni-guide/_next/static/chunks/17k9p6bj5stes.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"TQ-7-YuaFWPc-CEB3FFhG"}
+4:{}
+5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null

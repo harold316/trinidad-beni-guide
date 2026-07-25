@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /admin
+Disallow: /panel
+
+Sitemap: https://harold316.github.io/trinidad-beni-guide/sitemap.xml

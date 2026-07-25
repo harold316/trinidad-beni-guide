@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Trinidad Beni Guide">
+  <rect width="512" height="512" rx="96" fill="#4CAF50"/>
+  <circle cx="256" cy="210" r="78" fill="#FFFFFF" opacity="0.95"/>
+  <path d="M140 360c28-62 78-96 116-96s88 34 116 96" fill="#FFFFFF" opacity="0.95"/>
+  <path d="M320 150c28-8 58 10 64 40" fill="none" stroke="#FFEB3B" stroke-width="18" stroke-linecap="round"/>
+</svg>
