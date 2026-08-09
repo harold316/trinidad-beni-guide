@@ -11,6 +11,7 @@
             "preLaunchTask": "Next.js dev server",
             "url": "http://localhost:3000",
             "runtimeExecutable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+            "userDataDir": "${workspaceFolder}/.vscode/chrome-debug-profile",
             "webRoot": "${workspaceFolder}"
         }
     ]
