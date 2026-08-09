@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Next.js dev server",
+      "type": "shell",
+      "command": "if (Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue) { Write-Output 'Next.js already ready' } else { npm.cmd run dev }",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "nextjs",
+        "pattern": {
+          "regexp": "^.*$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^.*(next dev|Next.js already ready).*$",
+          "endsPattern": "^.*Ready in.*$"
+        }
+      }
+    }
+  ]
+}

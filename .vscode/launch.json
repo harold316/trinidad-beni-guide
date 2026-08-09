@@ -8,7 +8,9 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
+            "preLaunchTask": "Next.js dev server",
             "url": "http://localhost:3000",
+            "runtimeExecutable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
             "webRoot": "${workspaceFolder}"
         }
     ]

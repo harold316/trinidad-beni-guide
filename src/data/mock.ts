@@ -27,7 +27,7 @@ export const mockBusinesses: Business[] = [
     subcategory: "Comida típica",
     address: "Av. 6 de Agosto #245, Trinidad",
     phone: "+591 34621234",
-    whatsapp: "59170011122",
+    whatsapp: "5917306744",
     website: "https://example.com",
     social: { facebook: "#", instagram: "#" },
     hours,
