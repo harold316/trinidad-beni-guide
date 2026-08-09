@@ -37,7 +37,7 @@ export function Footer() {
 
         <div>
           <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[var(--color-ink)]">
-            Explorar
+            Explorar ahora
           </h3>
           <ul className="space-y-2 text-sm text-[var(--color-muted)]">
             <li><Link href="/restaurantes" className="hover:text-[var(--color-primary)]">Restaurantes</Link></li>
@@ -59,7 +59,7 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <FaPhone className="text-[var(--color-primary)]" />
-              +591 71111111
+              +591 73906744
             </li>
             <li className="flex items-center gap-2">
               <FaEnvelope className="text-[var(--color-primary)]" />
@@ -82,7 +82,7 @@ export function Footer() {
             Newsletter
           </h3>
           <p className="mb-4 text-sm text-[var(--color-muted)]">
-            Recibe eventos, promociones y novedades de Trinidad.
+            Recibe eventos, promociones y novedades de Trinidad Beni.
           </p>
           <NewsletterForm />
         </div>

@@ -2,7 +2,7 @@
 
 import { FaFacebookMessenger, FaTelegram, FaWhatsapp } from "react-icons/fa";
 
-const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "59171111111";
+const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "59173906744";
 const messenger = process.env.NEXT_PUBLIC_MESSENGER_URL || "https://m.me/";
 const telegram = process.env.NEXT_PUBLIC_TELEGRAM_URL || "https://t.me/";
 

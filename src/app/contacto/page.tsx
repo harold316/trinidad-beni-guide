@@ -29,7 +29,7 @@ export default function ContactoPage() {
             </p>
             <ul className="mt-4 space-y-2 text-sm text-[var(--color-muted)]">
               <li>Email: hola@trinidadbeniguide.com</li>
-              <li>WhatsApp: +591 71111111</li>
+              <li>WhatsApp: +591 73906744</li>
               <li>Horario: Lun–Vie 09:00–18:00</li>
             </ul>
           </div>
