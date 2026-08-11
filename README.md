@@ -3,9 +3,12 @@
 Portal turístico y comercial de **Trinidad, Beni (Bolivia)**.  
 Directorio moderno para restaurantes, turismo, salud, empresas, promociones, eventos y noticias.
 
-**Autor:** Harold · **Empresa:** [Sofy Tech](https://github.com/harold316) · **Ubicación:** Trinidad, Beni, Bolivia  
+**Autor:** Harold Tony Isita Ramirez · **Empresa:** SofyTech · **Ubicación:** Trinidad, Beni, Bolivia  
 
-[Demo en vivo](https://harold316.github.io/trinidad-beni-guide/) · [Issues](https://github.com/harold316/trinidad-beni-guide/issues)
+[Demo en vivo](https://harold316.github.io/trinidad-beni-guide/) ·
+[**Portafolio + CV (reclutadores)**](./PORTFOLIO.md) ·
+[CV HTML](./docs/cv/CV_Harold_Tony_Isita_Ramirez.html) ·
+[App en Google Play](https://play.google.com/store/apps/details?id=com.trinidad.restaurant_app)
 
 ---
 
