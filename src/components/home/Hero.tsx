@@ -7,8 +7,7 @@ import { FaSearch } from "react-icons/fa";
 import { SITE_NAME, SITE_TAGLINE } from "@/lib/constants";
 import { ButtonLink } from "@/components/ui/Button";
 
-const HERO_IMAGE =
-  "https://i.ibb.co/LXR00gy2/catedral.jpg";
+const HERO_IMAGE = "/images/hero-catedral.jpg";
 
 export function Hero() {
   const router = useRouter();
@@ -29,6 +28,7 @@ export function Hero() {
         priority
         sizes="100vw"
         className="object-cover"
+        style={{ objectPosition: "center" }}
       />
 
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,28,18,0.55)_0%,rgba(8,28,18,0.35)_40%,rgba(8,28,18,0.75)_100%)]" />
