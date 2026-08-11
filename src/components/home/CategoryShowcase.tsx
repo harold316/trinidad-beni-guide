@@ -30,7 +30,7 @@ export function CategoryShowcase() {
       {categories.map((cat, index) => (
         <motion.div
           key={cat.label}
-          initial={{ opacity: 0, y: 16 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: index * 0.04 }}
