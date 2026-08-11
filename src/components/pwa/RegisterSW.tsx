@@ -14,16 +14,22 @@ export function RegisterSW() {
     const local = isLocalHost();
     const production = process.env.NODE_ENV === "production";
 
-    // Nunca registrar SW en localhost: limpia residuos y evita bucles con HMR.
+    // En local nunca registrar SW: solo limpiar si quedó uno viejo.
     if (local || !production) {
       void (async () => {
-        const hadController = Boolean(navigator.serviceWorker.controller);
         const regs = await navigator.serviceWorker.getRegistrations();
+        if (regs.length === 0 && !navigator.serviceWorker.controller) return;
+
+        const hadController = Boolean(navigator.serviceWorker.controller);
         await Promise.all(regs.map((reg) => reg.unregister()));
 
         if ("caches" in window) {
           const keys = await caches.keys();
-          await Promise.all(keys.map((key) => caches.delete(key)));
+          await Promise.all(
+            keys
+              .filter((key) => key.startsWith("tbg-cache"))
+              .map((key) => caches.delete(key))
+          );
         }
 
         if (hadController && !sessionStorage.getItem("tbg-sw-cleared")) {

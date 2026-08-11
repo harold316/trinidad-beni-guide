@@ -14,7 +14,7 @@
         "background": {
           "activeOnStart": true,
           "beginsPattern": "^.*(next dev|Next.js already ready).*$",
-          "endsPattern": "^.*Ready in.*$"
+          "endsPattern": "^.*(Ready in|Next.js already ready).*$"
         }
       }
     }
