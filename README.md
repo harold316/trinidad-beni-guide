@@ -1,20 +1,25 @@
 # Trinidad Beni Guide
 
-Portal turístico y comercial de **Trinidad, Beni (Bolivia)**. Directorio moderno para restaurantes, turismo, salud, empresas, promociones, eventos y noticias.
+Portal turístico y comercial de **Trinidad, Beni (Bolivia)**.  
+Directorio moderno para restaurantes, turismo, salud, empresas, promociones, eventos y noticias.
+
+**Autor:** Harold · **Empresa:** [Sofy Tech](https://github.com/harold316) · **Ubicación:** Trinidad, Beni, Bolivia  
+
+[Demo en vivo](https://harold316.github.io/trinidad-beni-guide/) · [Issues](https://github.com/harold316/trinidad-beni-guide/issues)
+
+---
 
 ## Stack
 
-- Next.js 16 (App Router) + React 19 + TypeScript
-- Tailwind CSS 4
-- Framer Motion
-- React Icons
-- Firebase (Auth, Firestore, Storage)
-- Google Maps (embed + API ready)
-- PWA (manifest + service worker)
-- next-themes (Dark Mode)
-- Zustand (favoritos y comparador)
-- Swiper (promociones)
-- Sonner (toasts)
+| Área | Tecnología |
+|------|------------|
+| Framework | Next.js 16 (App Router) · React 19 · TypeScript |
+| UI | Tailwind CSS 4 · Framer Motion · React Icons · Swiper |
+| Estado | Zustand (favoritos y comparador) |
+| Backend | Firebase Auth · Firestore · Storage |
+| Extra | PWA · Dark mode · Google Maps · SEO (JSON-LD, sitemap, OG) |
+
+---
 
 ## Características
 
@@ -24,14 +29,16 @@ Portal turístico y comercial de **Trinidad, Beni (Bolivia)**. Directorio modern
 - Promociones con slider automático y cupones
 - Eventos y noticias
 - Publicidad administrable (header, sidebar, footer, entre tarjetas)
-- Panel Admin (dashboard + CRUD UI)
+- Panel Admin (dashboard + CRUD)
 - Panel Negocio (perfil, medios, promociones, productos, horarios)
-- Auth (correo + Google) con roles: admin, empresa, cliente, visitante
-- Favoritos, comparador, newsletter, contacto
+- Auth (correo + Google) con roles: `admin` · `empresa` · `cliente` · `visitante`
+- Favoritos, comparador, newsletter y contacto
 - Botones flotantes WhatsApp / Messenger / Telegram
 - SEO: metadata, Open Graph, robots, sitemap, JSON-LD
 - Analytics listo (GA + Meta Pixel por env)
 - Dark mode, lazy loading, skeletons, mobile first
+
+---
 
 ## Inicio rápido
 
@@ -45,16 +52,20 @@ Abre [http://localhost:3000](http://localhost:3000).
 
 Sin Firebase configurado, la app corre en **modo demo** con datos mock.
 
+---
+
 ## Variables de entorno
 
 Copia `.env.example` a `.env.local` y completa:
 
 - Firebase (API key, auth domain, project id, storage, app id)
-- `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` (opcional para Maps JS avanzado)
+- `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` (opcional)
 - `NEXT_PUBLIC_GA_MEASUREMENT_ID`
 - `NEXT_PUBLIC_META_PIXEL_ID`
 - `NEXT_PUBLIC_SITE_URL`
 - WhatsApp / Messenger / Telegram
+
+---
 
 ## Estructura
 
@@ -77,25 +88,18 @@ public/
   sw.js
 ```
 
-## Firebase
+---
 
-Colecciones sugeridas:
+## Roles
 
-- `users`
-- `businesses`
-- `promotions`
-- `events`
-- `news`
-- `ads`
-- `contacts`
-- `newsletter`
-- `categories`
+| Rol | Acceso |
+|-----|--------|
+| Visitante | Navegar y buscar |
+| Cliente | Favoritos, reseñas, cuenta |
+| Empresa | Panel de negocio |
+| Admin | Dashboard y CRUD global |
 
-Storage:
-
-- `businesses/{businessId}/logo|images|videos|menus/`
-
-Reglas de ejemplo en `firestore.rules` y hosting en `firebase.json`.
+---
 
 ## Deploy
 
@@ -103,8 +107,17 @@ Reglas de ejemplo en `firestore.rules` y hosting en `firebase.json`.
 
 ```bash
 npm run build
-# Conectar repo en vercel.com y definir env vars
 ```
+
+Conecta el repo en [vercel.com](https://vercel.com) y define las variables de entorno.
+
+### GitHub Pages
+
+Configurado con `output: "export"` y workflow en `.github/workflows/deploy-github-pages.yml`.
+
+1. Rama `main` en GitHub  
+2. **Settings → Pages → Source: GitHub Actions**  
+3. Demo: `https://harold316.github.io/trinidad-beni-guide/`
 
 ### Firebase Hosting
 
@@ -113,41 +126,33 @@ npm run build
 firebase deploy
 ```
 
-> Para App Router en Firebase Hosting suele usarse SSR con Cloud Functions o export estático según tu estrategia. Vercel es el path más directo.
-
-### GitHub Pages
-
-El proyecto está configurado con `output: "export"` y un workflow en `.github/workflows/deploy-github-pages.yml`.
-
-1. Sube el repo a GitHub (rama `main`)
-2. En el repo: **Settings → Pages → Source: GitHub Actions**
-3. Cada push a `main` publica el sitio en:
-   `https://TU_USUARIO.github.io/trinidad-beni-guide/`
-
-Para desarrollo local no uses `NEXT_PUBLIC_BASE_PATH`. En CI se define automáticamente.
+---
 
 ## Scripts
 
-- `npm run dev` — desarrollo
-- `npm run build` — build producción
-- `npm run start` — servir build
-- `npm run lint` — ESLint
+| Comando | Descripción |
+|---------|-------------|
+| `npm run dev` | Desarrollo |
+| `npm run build` | Build producción |
+| `npm run start` | Servir build |
+| `npm run lint` | ESLint |
 
-## Roles
-
-| Rol | Acceso |
-|---|---|
-| Visitante | Navegar y buscar |
-| Cliente | Favoritos, reseñas, cuenta |
-| Empresa | Panel de negocio |
-| Admin | Dashboard y CRUD global |
+---
 
 ## Diseño
 
-Paleta: verde `#4CAF50`, blanco, gris claro, azul suave `#64B5F6`, amarillo promociones `#F9A825`.
+- **Paleta:** verde `#4CAF50`, blanco, gris claro, azul `#64B5F6`, amarillo `#F9A825`
+- **Tipografías:** Fraunces (display) + Manrope (body)
 
-Tipografías: **Fraunces** (display) + **Manrope** (body).
+---
+
+## Sofy Tech
+
+Producto desarrollado en **Trinidad, Beni (Bolivia)** como parte del portafolio de Sofy Tech: soluciones digitales para negocios locales (turismo, salud y comercio).
+
+---
 
 ## Licencia
 
-Proyecto privado / uso del cliente. Ajusta según tu acuerdo comercial.
+Uso privado / comercial según acuerdo con Sofy Tech.  
+© Sofy Tech — Trinidad, Beni, Bolivia
