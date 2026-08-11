@@ -24,7 +24,7 @@ export function Hero() {
     <section className="relative isolate min-h-[100svh] overflow-hidden">
       <Image
         src={HERO_IMAGE}
-        alt="Paisaje amazónico cerca de Trinidad, Beni"
+        alt="Catedral de Trinidad, Beni"
         fill
         priority
         sizes="100vw"
